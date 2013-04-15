@@ -1,4 +1,17 @@
-<xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<!--XSL style sheet to convert EESCHEMA XML Partlist Format to CSV BOM Format
+    Copyright (C) 2013, Stefan Helmert.
+    GPL v2.
+
+	Functionality:
+		Generation of csv table with table head of all existing field names 
+		and correct assigned cell entries
+	
+    How to use:
+        EESCHEMA Netlist Plugin:
+		xsltproc -o "%O" "C:\Program Files (x86)\KiCad\bin\plugins\bom2csv.xsl" "%I"
+-->
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	<xsl:output method="text"/>
 
 	<!-- for table head and empty table fields-->
@@ -47,4 +60,4 @@
 		</xsl:for-each>
 	</xsl:template>
 
- </xsl:transform>
+ </xsl:stylesheet>
