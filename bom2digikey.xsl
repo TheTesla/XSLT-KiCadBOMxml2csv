@@ -31,7 +31,7 @@
 				<!-- only fields, this implies only components, with Digi-Key Part Number -->
 				<xsl:if test="@name='Digi-Key Part Number'">
 					<!-- line end -->
-					<xsl:text>;&#xA;</xsl:text>
+					<xsl:text>&#xA;</xsl:text>
 					<!-- Digi-Key Part Number -->
 					<xsl:value-of select="."/>
 					<xsl:text>,</xsl:text>
